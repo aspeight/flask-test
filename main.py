@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return jsonify({'key':os.envron.get('DATABASE_URL', 'Missing db url')})
+    return jsonify({'key':os.environ.get('DATABASE_URL', 'Missing db url')})
 
 
 if __name__ == '__main__':
